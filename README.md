@@ -1,1 +1,2 @@
-# sudoku-solver
+# sudoku solver written in Haskell
+
