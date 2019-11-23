@@ -8,7 +8,10 @@ import qualified Data.List.Split as Split
 main :: IO ()
 main = do
     print "aap"
-    print allPossibleSudokus
+    print $ map (\x -> 
+        if validateSudoku x
+            then x
+            else [[9]]) allPossibleSudokus
 
 
 -- fill sudoku
